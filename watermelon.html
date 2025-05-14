@@ -13,6 +13,21 @@
       padding: 0;
     }
 
+    .drag-hint {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 18px;
+      text-align: center;
+      font-size: 1.3em;
+      color: #fff;
+      text-shadow: 0 1px 8px #000, 0 0 2px #000;
+      pointer-events: none;
+      font-family: inherit;
+      letter-spacing: 0.1em;
+      z-index: 10;
+    }
+
     #viewer-container {
       display: block;
       position: relative;
@@ -70,6 +85,7 @@
       <i id="btn-home" class="icons home" onclick="gotoHome();"></i>
       <i id="btn-fullscreen" class="icons fullscreen" onclick="toggleFullscreen();"></i>
     </div> -->
+    <div class="drag-hint">← Drag Me →</div>
   </div>
   <script>
     var element = document.getElementById('viewer-container');
